@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const store = require("../db/store");
+const Store = require("../db/store");
 
 // GET method route
 router.get("/notes", (req, res) => {
-	store.getNotes()
+	Store.getNotes()
 		.then((notes) => {
 			return res.json(notes);
 		})
@@ -11,18 +11,16 @@ router.get("/notes", (req, res) => {
 });
 
 // POST method route
-router.post("/", (req, res) => {
-	store
-		.saveNotes()
+router.post("/notes", (req, res) => {
+	Store.saveNotes(req.body)
 		.then((notes) => {
 			return res.json(notes);
 		})
 		.catch((err) => res.status(500).json(err));
 });
 
-router.delete("/", (req, res) => {
-	store
-		.deleteNotes()
+router.delete("/notes/:id", (req, res) => {
+	Store.deleteNotes(req.params.id)
 		.then((notes) => {
 			return res.json(notes);
 		})
