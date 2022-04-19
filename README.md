@@ -68,9 +68,9 @@ You haven’t learned how to handle DELETE requests, but this application has th
 
 You are required to submit BOTH of the following for review:
 
-* The URL of the functional, deployed application.
+* The URL of the functional, deployed application: https://peaceful-crag-75725.herokuapp.com/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project: https://github.com/Sccr0123/Epic-Note-Taker
 
 - - -
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
